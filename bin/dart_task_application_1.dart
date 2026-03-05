@@ -5,7 +5,7 @@ import 'dart:io';
 List<List<bool>> seats = List.generate(5, (int index)=> List.filled(5, false));
 Map<List<int>, Map<String, String>> bookings = {};
 void main(){
-  print("Welcome to our theater");
+   print("Welcome to our theater");
   bool flag = true;
   while(flag){
     displayOptions();
@@ -52,7 +52,7 @@ void displaySeats(){
         stdout.write("E");
       }
     }
-    print("");
+    print(" ");
   }
 }
 void  newBook(){
@@ -78,6 +78,7 @@ else{
 void displayBookings(){
   if(bookings.isEmpty){
     print("No bookings yet!");
+    
   }else{
     bookings.forEach((key, value) {
       print("Seat: Row ${key[0]}, Column ${key[1]}");
